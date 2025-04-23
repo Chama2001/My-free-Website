@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Joke Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="brand-container">
+        <img src="C:\Users\DELL\OneDrive\Documents\joke web\Black and Blue 3D Y2k Fashion Logo.png" alt="LIYANOVATE Logo" class="brand-logo">
+        <span class="brand-name">LIYANOVATE</span>
+      </div>
+
+  <div class="container" id="app-container">
+    <!-- Theme Toggle -->
+    <button id="theme-toggle">🌙 Dark Mode</button>
+
+    <h1>Random Joke Generator</h1>
+
+    <!-- Language Selector -->
+    <select id="language-selector">
+      <option value="en">English</option>
+      <option value="si">සිංහල (Sinhala)</option>
+    </select>
+
+    <!-- Category Selector -->
+    <select id="category-selector">
+      <option value="any">Any Category</option>
+      <option value="programming">Programming</option>
+      <option value="miscellaneous">Miscellaneous</option>
+      <option value="dark">Dark</option>
+      <option value="custom">Custom Jokes</option>
+    </select>
+
+    <!-- Joke Display -->
+    <p id="joke">Click the button below to get a random joke!</p>
+
+    <!-- Buttons -->
+    <div class="button-group">
+      <button id="generate-btn">Generate Joke</button>
+      <button id="copy-btn">📋 Copy Joke</button>
+      <button id="favorite-btn">⭐ Favorite</button>
+    </div>
+
+    <!-- Favorite Jokes List -->
+    <div id="favorites-section">
+      <h2>Favorite Jokes</h2>
+      <ul id="favorites-list"></ul>
+    </div>
+
+    <!-- Add Joke Form -->
+    <form id="add-joke-form">
+      <input type="text" id="new-joke" placeholder="Add your own joke" required />
+      <button type="submit">Add Joke</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2025 LIYANOVATE. All rights reserved.</p>
+  </footer>
+</body>
+</html>

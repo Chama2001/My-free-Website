@@ -1,0 +1,204 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    color: #333;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  body.dark-mode {
+    background: #121212;
+    color: #ffffff;
+  }
+  
+  .container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .container.dark-mode {
+    background: rgba(30, 30, 30, 0.9);
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #444;
+    transition: color 0.3s ease;
+  }
+  
+  h1.dark-mode {
+    color: #ffffff;
+  }
+  
+  #joke {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    min-height: 60px;
+    color: #555;
+    transition: color 0.3s ease;
+  }
+  
+  #joke.dark-mode {
+    color: #ffffff;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  #generate-btn,
+  #copy-btn,
+  #favorite-btn {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #generate-btn:hover {
+    background-color: #ff3b2f;
+  }
+  
+  #copy-btn {
+    background-color: #76c7c0;
+  }
+  
+  #copy-btn:hover {
+    background-color: #5aa8a2;
+  }
+  
+  #favorite-btn {
+    background-color: #ffc107;
+    color: #333;
+  }
+  
+  #favorite-btn:hover {
+    background-color: #e0a800;
+  }
+  
+  #add-joke-form {
+    margin-top: 20px;
+  }
+  
+  #add-joke-form input {
+    padding: 10px;
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+  }
+  
+  #add-joke-form input:focus {
+    border-color: #ff6f61;
+  }
+  
+  #add-joke-form button {
+    background-color: #76c7c0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #add-joke-form button:hover {
+    background-color: #5aa8a2;
+  }
+  
+  #theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #ff6f61;
+  }
+  
+  #favorites-section {
+    margin-top: 20px;
+    display: none; /* Hidden by default */
+  }
+  
+  #favorites-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  #favorites-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #favorites-list li {
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+  }
+  
+  #favorites-list li:hover {
+    background: #eaeaea;
+  }
+
+  /* Brand Container Styles */
+.brand-container {
+    position: fixed;
+    top: 15px; /* Adjust distance from the top */
+    left: 15px; /* Adjust distance from the right */
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between logo and name */
+    z-index: 1000; /* Ensures it stays on top of other elements */
+  }
+  
+  .brand-logo {
+    width: 60px; /* Small size for the logo */
+    height: auto;
+  }
+  
+  .brand-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #c31000; /* Matches your theme color */
+  }
+  /* Footer Styles */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #8f554f;
+    color: white;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer p {
+    margin: 0;
+  }
